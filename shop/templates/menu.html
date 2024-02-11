@@ -1,0 +1,17 @@
+ {% load static %}
+  <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="{% static 'images/Bold Company Name Typography Initials Logo (1).png' %}" alt="logo" width="125px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="{% url 'home' %}">Home</a></li>
+                        <li><a href="{% url 'list_product' %}">Products</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="{% url 'account' %}">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="{% url 'cart' %}"><img src="{% static 'images/shopping-cart-icon-2048x1842-etrk1yv6.png' %}" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
